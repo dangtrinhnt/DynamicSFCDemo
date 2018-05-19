@@ -13,9 +13,9 @@ Dynamic SFC Demo at OpenStack Summit 2018 Vancouver
 
 **2. Target to protect:** Server nova instance.
 
-<topology overview image 1>
+![alt text](https://github.com/dangtrinhnt/DynamicSFCDemo/raw/master/topology/DSFC1.png "Dynamic SFC 1")
 
-<topology overview image 2>
+![alt text](https://github.com/dangtrinhnt/DynamicSFCDemo/raw/master/topology/DSFC2.png "Dynamic SFC 2")
 
 ## III. Setting up
 
@@ -56,12 +56,12 @@ Trinh Nguyen <dangtrinhnt@gmail.com> - EdLab XYZ
 
 [4]: https://docs.openstack.org/tacker/latest/install/deploy_openwrt.html
 
-[5]: # link to no classifier VNFFGD
+[5]: https://github.com/dangtrinhnt/DynamicSFCDemo/blob/master/tosca_templates/vnffgd_no_classifier.yaml
 
-[6]: # link to ICMP traffic classifier VNFFGD
+[6]: https://github.com/dangtrinhnt/DynamicSFCDemo/blob/master/tosca_templates/vnffgd_icmp.yaml
 
-[7]: # link to suricata VNFFGD
+[7]: https://github.com/dangtrinhnt/DynamicSFCDemo/blob/master/tosca_templates/suricata_vnfd.yaml
 
-[8]: # link to OpenWRT VNFFGD
+[8]: https://github.com/dangtrinhnt/DynamicSFCDemo/blob/master/tosca_templates/openwrt_vnfd.yaml
 
-[9]: # link to OpenWRT firewall config param
+[9]: https://github.com/dangtrinhnt/DynamicSFCDemo/blob/master/tosca_templates/openwrt_vnfd_config.yaml
