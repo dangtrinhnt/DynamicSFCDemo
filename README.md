@@ -19,7 +19,7 @@ Dynamic SFC Demo at OpenStack Summit 2018 Vancouver by Tacker team
 
 ## III. Setting up
 
-**1.** Install **devstack** in a VM as it is described here *([0])* using the configuration sample here *([1])* (Please add here the right configuration for the management and external networks). Two network interfaces one, for the management and one for the external_network.
+**1.** Install **devstack** in a VM as it is described here *([0])* using the configuration sample here *([1])* (Please add here the right configuration for the management and external networks). Two network interfaces, one for the management and one for the external_network.
 
 **2.** Create a second VM where you will install the **Zabbix server** according to these instuctions *([2])*. Please be sure that the Zabbix server has an interface on the same network as the external_network of devstack to be able to monitor the server nova instance through the floating IP.
 
