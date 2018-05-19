@@ -1,5 +1,5 @@
 # Dynamic Service Function Chaining Demonstration
-Dynamic SFC Demo at OpenStack Summit 2018 Vancouver
+Dynamic SFC Demo at OpenStack Summit 2018 Vancouver by Tacker team
 
 ## I. Prerequisites
 
