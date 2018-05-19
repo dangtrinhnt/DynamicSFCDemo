@@ -37,13 +37,13 @@ Dynamic SFC Demo at OpenStack Summit 2018 Vancouver
 
 ## IV. Contributors
 
-Yong Sheng Gong <gong.yongsheng@99cloud.net> - 99cloud
+Yong Sheng Gong <gong.yongsheng@99cloud.net> - [99cloud](http://99cloud.net)
 
-Dimitrios Markou <mardim@intracom-telecom.com> - Intracom Telecom
+Dimitrios Markou <mardim@intracom-telecom.com> - [Intracom Telecom](http://www.intracom-telecom.com/)
 
-Yan Xing'an <yanxingan@cmss.chinamobile.com> - China Mobile
+Yan Xing'an <yanxingan@cmss.chinamobile.com> - [China Mobile](http://www.chinamobileltd.com/en/global/home.php)
 
-Trinh Nguyen <dangtrinhnt@gmail.com> - EdLab XYZ
+Trinh Nguyen <dangtrinhnt@gmail.com> - [EdLab](https://www.edlab.xyz/)
 
 
 [0]: https://docs.openstack.org/devstack/latest/
