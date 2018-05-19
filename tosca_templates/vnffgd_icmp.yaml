@@ -1,0 +1,39 @@
+tosca_definitions_version: tosca_simple_profile_for_nfv_1_0_0
+
+description: Sample VNFFG template
+
+topology_template:
+  description: Sample VNFFG template
+
+  node_templates:
+
+    Forwarding_path1:
+      type: tosca.nodes.nfv.FP.TackerV2
+      description: demo chain
+      properties:
+        id: 51
+        policy:
+          type: ACL
+          criteria:
+            - name: block_icmp
+              classifier:
+                network_src_port_id: 654eaf96-3737-4b72-9dd7-445a26dfc2ee
+                ip_proto: 1
+        path:
+          - forwarder: IDS
+            capability: CP2
+          - forwarder: openwrt
+            capability: CP4
+
+  groups:
+    VNFFG1:
+      type: tosca.groups.nfv.VNFFG
+      description: Traffic to server
+      properties:
+        vendor: tacker
+        version: 1.0
+        number_of_endpoints: 2
+        dependent_virtual_link: [VL1,VL2]
+        connection_point: [CP2,CP4]
+        constituent_vnfs: [IDS,openwrt]
+      members: [Forwarding_path1]
