@@ -1,13 +1,13 @@
 # Dynamic Service Function Chaining Demonstration
 Dynamic SFC Demo at OpenStack Summit 2018 Vancouver
 
-## Prerequisites
+## I. Prerequisites
 
 **1. Two libvirt VMs** to install devstack and Zabbix server.
 
 **2. Two libvirt networks** which can reach the internet (one management, one devstack external)
  
-## Topology
+## II. Topology
 
 **1. Chain:** IDS (Suricata), Openwrt (VNFs)
 
@@ -17,7 +17,7 @@ Dynamic SFC Demo at OpenStack Summit 2018 Vancouver
 
 <topology overview image 2>
 
-## Setting up
+## III. Setting up
 
 **1.** Install **devstack** in a VM as it is described here *([0])* using the configuration sample here *([1])* (Please add here the right configuration for the management and external networks). Two network interfaces one, for the management and one for the external_network.
 
@@ -34,6 +34,16 @@ Dynamic SFC Demo at OpenStack Summit 2018 Vancouver
 **5.** Create a VNFFG with a chain (IDS, Openwrt) and no classifier *([5])*.
 
 **6.** Generate ICMP traffic using PING towards the floating IP of the server nova instance and when that traffic reaches a threshold a specific event is published to the zabbix server and zabbix server executes the vvnffg-update action which update the already created VNFFG with a classifier which classifies the ICMP traffic *([6])*. That means that the traffic will be steered to the SFs and it will be mitigated.
+
+## IV. Contributors
+
+Yong Sheng Gong <gong.yongsheng@99cloud.net> - 99cloud
+
+Dimitrios Markou <mardim@intracom-telecom.com> - Intracom Telecom
+
+Yan Xing'an <yanxingan@cmss.chinamobile.com> - China Mobile
+
+Trinh Nguyen <dangtrinhnt@gmail.com> - EdLab XYZ
 
 
 [0]: https://docs.openstack.org/devstack/latest/
