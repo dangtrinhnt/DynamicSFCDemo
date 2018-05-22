@@ -41,8 +41,6 @@ Yong Sheng Gong <gong.yongsheng@99cloud.net> - [99cloud](http://99cloud.net)
 
 Dimitrios Markou <mardim@intracom-telecom.com> - [Intracom Telecom](http://www.intracom-telecom.com/)
 
-Yan Xing'an <yanxingan@cmss.chinamobile.com> - [China Mobile](http://www.chinamobileltd.com/en/global/home.php)
-
 Trinh Nguyen <dangtrinhnt@gmail.com> - [EdLab](https://www.edlab.xyz/)
 
 
