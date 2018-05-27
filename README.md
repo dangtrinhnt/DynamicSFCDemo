@@ -37,9 +37,9 @@ Dynamic SFC Demo at OpenStack Summit 2018 Vancouver by Tacker team
 
 ## IV. Contributors
 
-Yong Sheng Gong <gong.yongsheng@99cloud.net> - [99cloud](http://99cloud.net)
-
 Dimitrios Markou <mardim@intracom-telecom.com> - [Intracom Telecom](http://www.intracom-telecom.com/)
+
+Yong Sheng Gong <gong.yongsheng@99cloud.net> - [99cloud](http://99cloud.net)
 
 Trinh Nguyen <dangtrinhnt@gmail.com> - [EdLab](https://www.edlab.xyz/)
 
