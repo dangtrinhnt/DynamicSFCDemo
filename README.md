@@ -1,6 +1,10 @@
 # Dynamic Service Function Chaining Demonstration
 Dynamic SFC Demo at OpenStack Summit 2018 Vancouver by Tacker team
 
+* [**Presentation slides**](https://github.com/dangtrinhnt/DynamicSFCDemo/blob/master/DynamicSFC_OpenStackSummit2018Vancouver.pdf)
+
+* [**Video**](https://www.openstack.org/videos/vancouver-2018/dynamic-sfc-from-tacker-to-incept-specific-traffic-of-vm-1)
+
 ## I. Prerequisites
 
 **1. Two libvirt VMs** to install devstack and Zabbix server.
