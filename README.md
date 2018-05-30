@@ -43,7 +43,7 @@ Dynamic SFC Demo at OpenStack Summit 2018 Vancouver by Tacker team
 
 **4.** Deploy two Service Functions (SFs) via two VNFs:
 
-+ The first one is Suricata (IDS) which will be deployed using this VNFD template *([7])*. After the VNF instance has been deployed successfully, SSH to it and configure as in *([3])*.
++ The first one is Suricata (IDS) which will be deployed using this VNFD template *([7])* with this image *([10])*. After the VNF instance has been deployed successfully, SSH to it and configure as in *([3])*.
 
 + The second one is OpenWrt with the configuration is the same as it is described in the Tacker docs *([4])*. Use the VNFD template here *([8])* and param file here *([9])*.
 
@@ -79,3 +79,5 @@ Trinh Nguyen <dangtrinhnt@gmail.com> - [EdLab](https://www.edlab.xyz/)
 [8]: https://github.com/dangtrinhnt/DynamicSFCDemo/blob/master/tosca_templates/openwrt_vnfd.yaml
 
 [9]: https://github.com/dangtrinhnt/DynamicSFCDemo/blob/master/tosca_templates/openwrt_vnfd_config.yaml
+
+[10]: http://artifacts.opnfv.org/sfc/images/sfc_nsh_danube.qcow2
