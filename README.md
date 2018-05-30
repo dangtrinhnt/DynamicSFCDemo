@@ -27,7 +27,19 @@ Dynamic SFC Demo at OpenStack Summit 2018 Vancouver by Tacker team
 
 **2.** Create a second VM where you will install the **Zabbix server** according to these instuctions *([2])*. Please be sure that the Zabbix server has an interface on the same network as the external_network of devstack to be able to monitor the server nova instance through the floating IP.
 
-**3.** Install in the **server nova instance** and in the devstack VM natively the **zabbix agent** *([2])*. The zabbix agent in the server nova instance is used to send data back to the zabbix server. The zabbix agent in the devstack VM is essential because we execute from the zabbix server the vnffg-update command so we can update the classifier of the chain. And for this we need the zabbix agent to the devstack VM.
+**3.** Install in the **server nova instance** and in the devstack VM natively the **zabbix agent** *([2])*. The zabbix agent in the server nova instance is used to send data back to the zabbix server. The zabbix agent in the devstack VM is essential because we execute from the zabbix server the vnffg-update command so we can update the classifier of the chain. And for this we need the zabbix agent to be installed in the devstack VM. The command is as follows:
+
+```console
+/usr/local/bin/openstack --os-username admin --os-password devstack \
+    --os-project-name admin \
+    --os-user-domain-name default \
+    --os-project-domain-name default \
+    --os-project-domain-id default \
+    --os-auth-url http://<devstack ip address>/identity/v3 \
+    --os-region-name RegionOne \
+    vnf graph set \
+    --vnffgd-template vnffg_block_icmp.yaml block_icmp
+```
 
 **4.** Deploy two Service Functions (SFs) via two VNFs:
 
