@@ -48,15 +48,16 @@ Dynamic SFC Demo at OpenStack Summit 2018 Vancouver by Tacker team
 The action command is as follows (the tacker cli has been replaced by the openstack cli):
 
 ```console
-/usr/local/bin/openstack --os-username admin --os-password devstack \
-    --os-project-name admin \
-    --os-user-domain-name default \
-    --os-project-domain-name default \
-    --os-project-domain-id default \
-    --os-auth-url http://<devstack ip address>/identity/v3 \
-    --os-region-name RegionOne \
-    vnf graph set \
-    --vnffgd-template vnffg_block_icmp.yaml block_icmp
+/usr/local/bin/openstack --os-username admin \
+                         --os-password devstack \
+                         --os-project-name admin \
+                         --os-user-domain-name default \
+                         --os-project-domain-name default \
+                         --os-project-domain-id default \
+                         --os-auth-url http://<devstack ip address>/identity/v3 \
+                         --os-region-name RegionOne \
+                         vnf graph set \
+                         --vnffgd-template vnffg_block_icmp.yaml block_icmp
 ```
 
 That's all if you do this you must see the event in the Zabbix server when the traffic in eth0 interface match the expression-condition in the trigger.
