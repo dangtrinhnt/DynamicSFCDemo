@@ -33,7 +33,7 @@ Dynamic SFC Demo at OpenStack Summit 2018 Vancouver by Tacker team
 
 + Create a trigger with a name which contains the keyword BpS (e.g. BpS in the eth0 is too high) and add to that trigger an expression-condition which will generate an event if the traffic will set this expression-condition to True. The expression-condition is:
 
-``console
+```console
 {host-10-10-1-12:net.if.in[eth0].avg(2)}>2000
 ```
 
